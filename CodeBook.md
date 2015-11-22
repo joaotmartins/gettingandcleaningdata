@@ -17,13 +17,9 @@ This data set is a transformation of the following original data set:
 The dataset was retrieved from its website at:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-
 The tidy dataset consists of a selection of the mean and standard deviation variables of the original feature set. Additionally, the activity and subject columns were added to the dataset, and all the variables were subsequently aggregated (averaged) for each distinct subject and activity.
 
-
-
-The transformation is done by running the run_analysis.R script. The script assumes the original dataset has been decompressed into the current directory.
-The resulting data set is written into a file named 'tidy_data.txt'.
+The transformation is done by running the run_analysis.R script. The script assumes the original dataset has been decompressed into the current directory. The resulting data set is written into a file named 'tidy_data.txt'.
 
 ## Description of resulting data set
 
@@ -47,9 +43,9 @@ The transformation steps automated by the `run_analysis.R` script are as follows
 
 1. For each of the `train` and `test` sets: 
 1.1 Reading in the data set.
-1.2. Associate the subject and activity from the `subject_xxx.txt` and `activity_xxx.txt` files. The activity variable is converted into a factor by converting the numeric variables into the appropriate factor level. 
+1.2. Associate the subject and activity from the `subject_xxx.txt` and `activity_xxx.txt` files. The activity variable is converted into a factor by converting the numeric variables into the appropriate factor level read in from `activity_labels.txt`. 
 2. Both data sets are then combined into a single data set by joining them, row-wise.
-3. The full data set is then trimmed down to the columns of interest, decribed in the previous section.
+3. The full data set is then trimmed down to the columns of interest, decribed in the previous section. New, clean names for each variable are added to the dataset as described above.
 4. Finally, the data set is grouped by activity and subject; each of the remaining columns will contain the average value for all observations of a particular activity for a particular subject.
 5. Finally, this resulting aggregated set is written out to the `tidy_data.txt` variable.
 
