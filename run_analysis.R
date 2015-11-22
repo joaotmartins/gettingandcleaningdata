@@ -39,7 +39,7 @@ interestingFeatNames <-
           "fBodyBodyAccJerkMag.mean","fBodyBodyAccJerkMag.std",
           "fBodyBodyGyroMag.mean","fBodyBodyGyroMag.std",
           "fBodyBodyGyroJerkMag.mean","fBodyBodyGyroJerkMag.std",
-          "angle.tBodyAccMean.gravity","angle.tBodyAccJerkMean..gravityMean",
+          "angle.tBodyAccMean.gravity","angle.tBodyAccJerkMean.gravityMean",
           "angle.tBodyGyroMean.gravityMean",
           "angle.tBodyGyroJerkMean.gravityMean","angle.X.gravityMean",
           "angle.Y.gravityMean","angle.Z.gravityMean",
