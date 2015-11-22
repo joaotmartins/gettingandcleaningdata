@@ -2,17 +2,17 @@
 
 This data set is a transformation of the following original data set:
 
-> ==================================================================
-> Human Activity Recognition Using Smartphones Dataset
-> Version 1.0
-> ==================================================================
-> Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-> Smartlab - Non Linear Complex Systems Laboratory
-> DITEN - Università degli Studi di Genova.
-> Via Opera Pia 11A, I-16145, Genoa, Italy.
-> activityrecognition@smartlab.ws
-> www.smartlab.ws
-> ==================================================================
+	==================================================================
+	Human Activity Recognition Using Smartphones Dataset
+	Version 1.0
+	==================================================================
+	Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+	Smartlab - Non Linear Complex Systems Laboratory
+	DITEN - Università degli Studi di Genova.
+	Via Opera Pia 11A, I-16145, Genoa, Italy.
+	activityrecognition@smartlab.ws
+	www.smartlab.ws
+	==================================================================
 
 The dataset was retrieved from its website at:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -30,6 +30,7 @@ The resulting data set is written into a file named 'tidy_data.txt'.
 The resulting "tidy_data.txt" contains 75 columns.
 
 The first column, subject, contains the subject's unique id.
+
 The second column, activity, contains one of the values `LAYING`, `SITTING`, `STANDING`, `WALKING`, `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS` that identifies the activity the subject was performing at the time the measurements were taken.
 
 From the 3rd to 75th columns, they correspond to the average of the original dataset's corresponding measurements for that subject and activity combination.
